@@ -373,7 +373,26 @@
             </li>
         </ul>
     </div>
-   </div>
+    <div class="footer-subscribe"
+    <p class="subscribe-title">Subscribe</p>
+    <form class="footer-form">
+        <label class="footer-label">
+            <input class="footer-input"
+            name="email"
+            type="email"
+            placeholder="email"
+            />
+        </label>
+        
+        <button class="subscribe-btn btn" type="submit">
+            Subscribe
+        <svg class="subscribe-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-Frame"></use>
+        </svg>
+        </button>
+    </form>
+</div>
+</div>
 
 </footer>
 <!------------------------------------------------------------------------------->
@@ -385,8 +404,8 @@
             </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form class="modal-form">
-            <label class="modal-lable">
+        <form name="modal-form">
+            <label class="modal-label">
                 Name
                 <div class="modal-wrap">
                     <input class="modal-input"
@@ -400,7 +419,7 @@
                 </div>
             </label>
             
-            <label class="modal-form">
+            <label class="modal-label">
                 Phone
                 <div class="modal-wrap">
                     <input class="modal-input"
@@ -414,7 +433,7 @@
                 </div>
             </label>
 
-            <label class="modal-form">
+            <label class="modal-label">
                 Email
                 <div class="modal-wrap">
                     <input class="modal-input"
@@ -428,16 +447,16 @@
                 </div>
             </label>
 
-            <label class="modal-form">
+            <label class="modal-label">
                 Comment
-                <textarea class="modal-texterea"
+                <textarea class="modal-textarea"
                 name="comment"
                 type="text"
                 placeholder="Text input">
             </textarea>
         </label>
 
-        <label class="modal-form">
+        <label class="modal-label">
             <input class="modal-checkbox"
             name="checkbox"
             type="accept"
@@ -445,11 +464,14 @@
             and conditions of the Privacy Policy"
             />
             <span class="checkbox-icon"></span>
-            
+            <svg class="click" width="10" height="8">
+                <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+            I accept the terms and conditions of the Privacy Policy
+            <a class="privacy-link link" href="">Privacy Policy</a>
+            </label>
 
-
-
-        
+            <button class="submit-btn btn" type="submit">Send</button> 
         </form>
     </div>
 </div>

@@ -621,6 +621,7 @@ background-color: var(--button-hover);
     gap: 16px;
     width: 453px;
     margin-left: auto;
+    color: var(--white);
 }
 
 .subscribe-title {

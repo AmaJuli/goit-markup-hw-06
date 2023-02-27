@@ -799,7 +799,7 @@ background-color: var(--button-hover);
     
 }
 
-.modal.input:focus-within {
+.modal-input:focus-within {
     border: 1px solid var(--second-btn-color);
     outline: none;
 }
@@ -858,7 +858,7 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: transparent;
 }
 
-.modal-checkbox:checked .click-icon {
+.modal-checkbox:checked ~ .click-icon {
     fill: #f4f4fd;
     background-color: var(--button-hover);
 }

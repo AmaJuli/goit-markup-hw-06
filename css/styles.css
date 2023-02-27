@@ -619,7 +619,6 @@ background-color: var(--button-hover);
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 453px;
     margin-left: auto;
     color: var(--white);
 }
@@ -706,12 +705,20 @@ background-color: var(--button-hover);
     left: 50%;
     transform: translate(-50%, -50%);
     width: 408px;
-    height: 576px;
-    padding: 24px;
+    height: 584px;
+    padding: 72px;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
             0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+}
+
+.modal-title {
+    margin-bottom: 16px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
 }
 
 .btn-close {
@@ -746,15 +753,6 @@ background-color: var(--button-hover);
 
 .close-icon {
     fill: currentColor;
-}
-
-.modal-title {
-    margin-top: 24px;
-    margin-bottom: 16px;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: var(--main-text-color);
 }
 
 
@@ -795,14 +793,14 @@ background-color: var(--button-hover);
     padding: 8px 16px 8px 38px;
     font-size: 14px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    color: var(--second-btn-color);
+    color: #000000;
     letter-spacing: 0.01em;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
-.modal.input:focus {
+.modal.input:focus-within {
     border: 1px solid var(--second-btn-color);
     outline: none;
 }
@@ -818,16 +816,20 @@ background-color: var(--button-hover);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-input:focus-within+.modal-icon {
+    fill: var(--second-btn-color);
+}
 
-.modal-texterea {
+
+.modal-textarea {
+    resize: none;
     height: 120px;
     padding: 8px 16px;
     font-size: 14px;
     letter-spacing: 0.01em;
-    color: var(--second-btn-color);
+    color: #000000;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    resize: none;
 
 transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
